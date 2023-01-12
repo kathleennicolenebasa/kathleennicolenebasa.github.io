@@ -1,0 +1,237 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.showcase{
+    position: absolute;
+	right: 0;
+	width: 100%;
+	min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: pink;
+    z-index: 2;
+}
+.showcase .active{
+    right: 300px;
+}
+
+.showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upnav{
+    float: right;
+    position: top;
+    overflow:flex;
+}
+.upnav a{
+    float: left;
+    color:pink;
+     text-align: center;
+     padding: 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.upnav a:hover {
+    background-color:white;
+  color:black;
+}
+
+.navigationbar{
+    overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+.navigationbar a{
+    float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.drpdwn{
+    float: left;
+    overflow: hidden;
+}
+
+.drpdwn .dropbutton {
+    font-size: 16px;
+  border: none;
+  outline: none;
+  color:#86e3ce;
+  padding:12px 16px;
+  background-color: inherit;
+  margin: 0;
+  font-family: inherit;
+}
+.navigationbar a :hover, 
+.drpdwn:hover
+.dropbutton{
+    background-color: pink;
+}
+.drpdwn-aboutme{
+    display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.drpdwn-aboutme a {
+    float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; 
+}
+.drpdwn-aboutme a:hover{
+    background-color: #c996f1;
+}
+.drpdwn:hover
+.drpdwn-aboutme{
+    display: block
+}
+
+.firstname{
+    position: absolute;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 50px;
+    top: 80%;
+    margin-left: 20%;
+}
+.firstname span{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block;
+    color: palevioletred;
+    text-transform: uppercase;
+    animation: firstname 1s infinite;
+    animation-delay: calc(.1s* var(--i));
+}
+@keyframes firstname{
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
+
+.secondname{
+    position: absolute;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 50px;
+    top: 90%;
+    margin-left: 30%;
+}
+.secondname span{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block;
+    color: palevioletred;
+    text-transform: uppercase;
+    animation: secondname 1s infinite;
+    animation-delay: calc(.1s* var(--i));
+}
+@keyframes secondname{
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
+
+.middlename{
+    position: absolute;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 50px;
+    top: 100%;
+    margin-left: 40%;
+}
+.middlename span{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block;
+    color: palevioletred;
+    text-transform: uppercase;
+    animation: middlename 1s infinite;
+    animation-delay: calc(.1s* var(--i));
+}
+@keyframes middlename{
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
+
+.lastname{
+    position: absolute;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 50px;
+    top: 110%;
+    margin-left: 50%;
+}
+.lastname span{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block;
+    color: palevioletred;
+    text-transform: uppercase;
+    animation: lastname 1s infinite;
+    animation-delay: calc(.1s* var(--i));
+}
+@keyframes lastname{
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
+
+.paginationbutton{
+    text-align: center;
+  }
+  
+  .pgn {
+      display: inline-block;
+    }
+    
+  .pgn a {
+      color: whitesmoke;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+      border: 5px solid white;
+      margin: 0 4px;
+    }
+    
+  .pgn a.active {
+      background-color:palevioletred;
+      color: white;
+      border: 2px solid whitesmoke;
+    }
+    
+    .pgn a:hover:not(.active) {background-color: #86e3ce;
+  }
+    
+
